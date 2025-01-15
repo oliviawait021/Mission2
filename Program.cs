@@ -22,6 +22,12 @@ internal class Program
         rd = new RollDice(numRolls);
         
         // call the Roll() method
-        rd.Roll();
+        double[] results = rd.Roll();
+        
+        // call the DisplayRollResults() method
+        rd.DisplayRollResults(results);
+         
+        // final output to thank the user
+        Console.WriteLine("Thank you for using the dice throwing simulator. Goodbye!");
     }
 }
